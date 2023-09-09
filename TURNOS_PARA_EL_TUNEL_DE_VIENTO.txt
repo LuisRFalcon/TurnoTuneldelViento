@@ -1,0 +1,100 @@
+
+Algoritmo TURNOS_PARA_EL_TUNEL_DE_VIENTO
+	Definir Dia,c1,c2,c3,c4,c5,turno_completo Como Entero	
+	c1=0
+	c2=0
+	c3=0
+	c4=0
+	c5=0
+	turno_completo=1
+	
+	Escribir " Usted ingresó al lugar donde podré solicitar "
+	Escribir " Un turno para Utilizar el Tunel de Viento "
+	Escribir " De la Universidad Nacional del Nordeste UNNE "
+	
+	
+	
+	Repetir			
+		
+		Escribir " ¿Que dia necesita ocupar el Tunel? "
+		Escribir " "
+		Escribir " Dia 1 : Lunes oprimir 1 "
+		Escribir " Dia 2 : Martes oprimir 2 "
+		Escribir " Dia 3 : Miercoles oprimir 3 "
+		Escribir " Dia 4 : Jueves oprimir 4 "
+		Escribir " Dia 5 : Viernes oprimir 5 "
+		
+		Leer Dia
+		Segun Dia Hacer
+			1:
+				c1=c1+1
+				si c1=turno_completo Entonces
+					Escribir " Los turnos del Lunes estan completos "
+				SiNo		
+					Escribir " ingrese otro dia, Lunes completo"
+					
+				finSi
+			2:
+				c2=c2+1
+				si c2=turno_completo Entonces
+					Escribir " Los turnos del Martes estan completos "
+				SiNo		
+					Escribir " ingrese otro dia, Martes completo"
+					
+				finSi
+				
+			3:
+				c3=c3+1
+				si c3=turno_completo Entonces
+					Escribir " Los turnos del Miercoles estan completos "
+				SiNo		
+					Escribir " ingrese otro dia, Miercoles completo"
+					
+				finSi
+				
+			4:
+				c4=c4+1
+				si c4=turno_completo Entonces
+					Escribir " Los turnos del Jueves estan completos "
+				SiNo		
+					Escribir " ingrese otro dia, Jueves completo"
+					
+				finSi
+				
+			5:
+				c5=c5+1
+				si c5=turno_completo Entonces
+					Escribir " Los turnos del Viernes estan completos "
+				SiNo		
+					Escribir " ingrese otro dia, Viernes completo"
+					
+				finSi
+				
+			De Otro Modo:
+				Escribir " Esa opcion es invalida "
+				Escribir " "
+				Escribir "ingrese opcion nuevamente  "
+				leer Dia
+				
+		Fin Segun	
+		
+		
+	Hasta Que   c1=1 y c2=1 y c3=1 y c4=1 y c5=1
+	
+	
+	Escribir " Muchas gracias por sus reservas, cupos completos"
+	
+	
+	
+	si c1=turno_completo y c2=turno_completo y c3=turno_completo y c4=turno_completo y c5=turno_completo Entonces
+		c1=0
+		c2=0
+		c3=0
+		c4=0
+		c5=0
+		turno_completo=1	
+	FinSi
+
+FinAlgoritmo
+
+
